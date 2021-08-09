@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+
+    <style>
+        * {box-sizing: border-box;}
+        
+        body { 
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .header {
+          overflow: hidden;
+          background-color: #33375a;
+          text-align: center;
+        }
+        .header1 {
+          overflow: hidden;
+          background-color: #1f1f1f;
+          text-align: center;
+        }
+      
+        .header2 {
+          overflow: hidden;
+          background-color: #1f1f1f;
+          text-align: center;
+        
+        }      
+
+
+        form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 80%;
+        background: #f1f1f1;
+        }
+
+        form.example button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: #2196F3;
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        cursor: pointer;
+        }
+
+      form.example button:hover {
+      background: #0b7dda; 
+       }
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+.container {
+  position: relative;
+  padding: 20px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  height: auto;
+  align-self: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  width: 10px;
+}
+.container:hover .image {
+  opacity: 0.3;
+}
+.column {
+  float: left;
+  width: 150px;
+  padding: 0;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+        </style>
+
+</head>
+<body>
+    
+    <div class="header">
+      <div class="row">
+        <div class="column">
+      <img src="imgs/logo.png" alt="" style="width: 100px;margin-bottom: 10px;margin-top: 10px;margin-left: 360px;">
+    </div>
+    <div class="column">
+      <img src="imgs/heading.png" alt="" style="width: 400px; margin-left: 350px;">
+    </div>
+    </div>
+    </div>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><a href="page not responsive.html">Home</a></li>
+          <li><a href="page not responsive.html">About Us</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Internships<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="page not responsive.html">Computer Science Internships</a></li>
+              <li><a href="page not responsive.html">Finance Internships</a></li>
+              <li><a href="page not responsive.html">Marketing Internships</a></li>
+              <li><a href="page not responsive.html">HR Internships</a></li>
+              <li><a href="page not responsive.html">Civil Internships</a></li>
+              <li><a href="page not responsive.html">More...</a></li>
+            </ul>
+          </li>
+          <li><a href="page not responsive.html">Fresher Jobs</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="page not responsive.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="page not responsive.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </nav>
+        
+      
+        
+      
+
+<form class="example" action="page not responsive.html" style="margin:auto;max-width:300px;padding-bottom: 10px;" >
+  <input type="text" placeholder="Search.." name="search2">
+  <button type="submit"><i class="fa fa-search"></i></button>
+  
+</form>
+
+<div class="header2" >
+  <img src="imgs/vision.jpeg" alt="" style="width: 900px;"></a>
+</div>
+
+<h2><b>&nbsp; Popular Cities</b></h2>
+<div class="row">
+  <div class="column">
+<div class="container">
+<a href="page not responsive.html" style="padding-left: 30px;"><img src="imgs/work from home.jpeg" alt="" class="image" style="width: 150px;"></a>
+</div>
+</div>
+<div class="column">
+<div class="container">
+<a href="page not responsive.html" style="padding-left: 30px;"><img src="imgs/hyderabad.jpeg" alt="" class="image" style="width: 100px;"></a>
+</div>
+</div>
+<div class="column">
+<div class="container">
+<a href="page not responsive.html" style="padding-left: 30px;"><img src="imgs/banglore.jpeg" alt="" class="image" style="width: 120px;"></a>
+</div>
+</div>
+<div class="column">
+<div class="container">
+<a href="page not responsive.html" style="padding-left: 30px;"><img src="imgs/delhi.jpeg" alt="" class="image" style="width: 110px;"></a>
+</div>
+</div>
+<div class="column">
+<div class="container">
+<a href="page not responsive.html" style="padding-left: 30px;"><img src="imgs/mumbai.jpeg" alt="" class="image" style="width: 140px;"></a>
+</div>
+</div>
+<div class="column">
+<div class="container">
+<a href="page not responsive.html" style="padding-left: 30px;"><img src="imgs/chennai.jpeg" alt="" class="image" style="width: 130px;"></a>
+</div>
+</div>
+<div class="column">
+<div class="container">
+<a href="page not responsive.html" style="padding-left: 30px;"><img src="imgs/kolkata.jpeg" alt="" class="image" style="width: 130px;"></a>
+</div>
+</div>
+<div class="column">
+<div class="container">
+<a href="page not responsive.html" style="padding-left: 30px;"><img src="imgs/international.jpeg" alt="" class="image" style="width: 110px;"></a>
+</div>
+</div>
+</div>
+<a href="page not responsive.html"><p style="padding-left: 1190px;"><small>More...</small></p></a>
+
+<h2><b>&nbsp; Popular Categories</b></h2>
+<div class="row">
+  <div class="column">
+<div class="container">
+<a href="page not responsive.html" style="padding-left: 30px;"><img src="imgs/part time.png" alt="" class="image" style="width: 100px; padding-left: 10px;align-self: center; "></a>
+</div>
+</div>
+<div class="column">
+<div class="container">
+<a href="page not responsive.html" style="padding-left: 30px;"><img src="imgs/ngo.jpeg" alt="" class="image" style="width: 120px;align-self: center;"></a>
+</div>
+</div>
+<div class="column">
+<div class="container">
+<a href="page not responsive.html" style="padding-left: 30px;"><img src="imgs/design.jpeg" alt="" class="image" style="width: 120px;"></a>
+</div>
+</div>
+<div class="column">
+<div class="container">
+<a href="page not responsive.html" style="padding-left: 30px;"><img src="imgs/Engineering.jpeg" alt="" class="image" style="width: 120px;"></a>
+</div>
+</div>
+<div class="column">
+<div class="container">
+<a href="page not responsive.html" style="padding-left: 30px;"><img src="imgs/science.jpeg" alt="" class="image" style="width: 120px;"></a>
+</div>
+</div>
+<div class="column">
+<div class="container">
+<a href="page not responsive.html" style="padding-left: 30px;"><img src="imgs/mba.jpeg" alt="" class="image" style="width: 130px;"></a>
+</div>
+</div>
+<div class="column">
+<div class="container">
+<a href="page not responsive.html" style="padding-left: 30px;"><img src="imgs/media.jpeg" alt="" class="image" style="width: 110px;"></a>
+</div>
+</div>
+<div class="column">
+<div class="container">
+<a href="page not responsive.html" style="padding-left: 30px;"><img src="imgs/humanities.jpeg" alt="" class="image" style="width: 110px;"></a>
+</div>
+</div>
+</div>
+<a href="page not responsive.html"><p style="padding-left: 1190px;"><small>More...</small></p></a>
+
+<h2><b>&nbsp; Prointern Tranings </b></h2>
+<div class="row">
+  <div class="column">
+<div class="container">
+<a href="page not responsive.html" style="padding-left: 30px;"><img src="imgs/digital marketing.jpeg" alt="" class="image" style="width: 100px;"></a>
+</div>
+</div>
+<div class="column">
+<div class="container">
+<a href="page not responsive.html" style="padding-left: 30px;"><img src="imgs/programming with python.jpeg" alt="" class="image" style="width: 120px;"></a>
+</div>
+</div>
+<div class="column">
+<div class="container">
+<a href="page not responsive.html" style="padding-left: 30px;"><img src="imgs/web development.jpeg" alt="" class="image" style="width: 130px;"></a>
+</div>
+</div>
+<div class="column">
+<div class="container">
+<a href="page not responsive.html" style="padding-left: 30px;"><img src="imgs/advanced excel.jpeg" alt="" class="image" style="width: 150px;"></a>
+</div>
+</div>
+<div class="column">
+<div class="container">
+<a href="page not responsive.html" style="padding-left: 30px;"><img src="imgs/autocad.jpeg" alt="" class="image" style="width: 100px;"></a>
+</div>
+</div>
+<div class="column">
+<div class="container">
+<a href="page not responsive.html" style="padding-left: 30px;"><img src="imgs/machine learning.jpeg" alt="" class="image" style="width: 100px;"></a>
+</div>
+</div>
+<div class="column">
+<div class="container">
+<a href="page not responsive.html" style="padding-left: 30px;"><img src="imgs/creative writing.jpeg" alt="" class="image" style="width: 140px;"></a>
+</div>
+</div>
+<div class="column">
+<div class="container">
+<a href="page not responsive.html" style="padding-left: 30px;"><img src="imgs/ethical hacking.jpeg" alt="" class="image" style="width: 130px;"></a>
+</div>
+</div>
+</div>
+<a href="page not responsive.html"><p style="padding-left: 1190px; padding-top: 25px;"><small>More...</small></p></a>
+
+<div class="header1" style="padding-bottom: 10px;">
+  <h2 style="text-align: left;padding-left: 10px; color:rgb(255, 255, 255)"></h2<h2><b>Testimonials</b></h2>
+<img src="imgs/lucas.jpeg" alt="" style="width: 30%;">
+<img src="imgs/ronaldo.jpeg" alt="" style="width: 30%;">
+<img src="imgs/cristiano.jpeg" alt="" style="width: 30%;">
+<h2 style="text-align: left;padding-left: 10px;padding-bottom: 30x; color:rgb(255, 255, 255)"></h2<h2><b></b></h2>
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>About</h6>
+        <p class="text-justify;" style="text-align: center;">We are a technology company on a mission to equip students with relevant skills & practical exposure through internships and online trainings. Imagine a world full of freedom and possibilities. A world where you can discover your passion and turn it into your career. A world where your practical skills matter more than your university degree. A world where you graduate fully assured, fully confident, and fully prepared to stake claim on your place in the world.
+
+          At Pro Intern, we are making this dream a reality, join us! </p>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Tranings</h6>
+        <ul class="footer-links">
+          <li><a href="page not responsive.html">Digital Marketing</a></li>
+          <li><a href="page not responsive.html">Machine Learning</a></li>
+          <li><a href="page not responsive.html">Web Development</a></li>
+          <li><a href="page not responsive.html">Programming with Python</a></li>
+          <li><a href="page not responsive.html">Creative Writing</a></li>
+          <li><a href="page not responsive.html">Ethical Hacking</a></li>
+        </ul>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="page not responsive.html">About Us</a></li>
+          <li><a href="page not responsive.html">Contribute</a></li>
+          <li><a href="page not responsive.html">Privacy Policy</a></li>
+          <li><a href="page not responsive.html">Terms and Conditions</a></li>
+          <li><a href="page not responsive.html">Sitemap</a></li>
+          <li><a href="page not responsive.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text;" style="text-align: left;">Copyright &copy; 2021 All Rights Reserved by 
+     <a href="page not responsive.html">ProIntern</a>.
+        </p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-icons">
+          <li><a class="facebook" href="page not responsive.html"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="twitter" href="page not responsive.html"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="dribbble" href="page not responsive.html"><i class="fa fa-dribbble"></i></a></li>
+          <li><a class="linkedin" href="page not responsive.html"><i class="fa fa-linkedin"></i></a></li>   
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>
